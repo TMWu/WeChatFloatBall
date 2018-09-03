@@ -1,15 +1,14 @@
 //
 //  ViewController.h
-//  WeChatFloatBall
+//  WebViewDemo
 //
-//  Created by TIM on 2018/9/3.
+//  Created by TIM on 2018/8/29.
 //  Copyright © 2018年 TIM. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
-
 
 @end
 

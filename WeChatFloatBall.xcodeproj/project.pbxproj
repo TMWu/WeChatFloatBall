@@ -7,25 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		223F2F4D213D8B0300C4973D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F4C213D8B0300C4973D /* AppDelegate.m */; };
-		223F2F50213D8B0300C4973D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F4F213D8B0300C4973D /* ViewController.m */; };
-		223F2F53213D8B0300C4973D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223F2F51213D8B0300C4973D /* Main.storyboard */; };
-		223F2F55213D8B0600C4973D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223F2F54213D8B0600C4973D /* Assets.xcassets */; };
-		223F2F58213D8B0600C4973D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223F2F56213D8B0600C4973D /* LaunchScreen.storyboard */; };
-		223F2F5B213D8B0600C4973D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F5A213D8B0600C4973D /* main.m */; };
+		223F2F86213D8B7000C4973D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F61213D8B6A00C4973D /* AppDelegate.m */; };
+		223F2F88213D8B7000C4973D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F65213D8B6B00C4973D /* ViewController.m */; };
+		223F2F89213D8B7000C4973D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223F2F68213D8B6B00C4973D /* Assets.xcassets */; };
+		223F2F8A213D8B7000C4973D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223F2F69213D8B6B00C4973D /* LaunchScreen.storyboard */; };
+		223F2F8B213D8B7000C4973D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F6B213D8B6B00C4973D /* main.m */; };
+		223F2F8D213D8B7000C4973D /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F6F213D8B6C00C4973D /* BaseNavigationController.m */; };
+		223F2F8E213D8B7000C4973D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F72213D8B6C00C4973D /* SecondViewController.m */; };
+		223F2F8F213D8B7000C4973D /* FloatTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F74213D8B6C00C4973D /* FloatTransitionAnimator.m */; };
+		223F2F90213D8B7000C4973D /* UINavigationController+FloatBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7A213D8B6C00C4973D /* UINavigationController+FloatBall.m */; };
+		223F2F91213D8B7000C4973D /* CancelFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7C213D8B6C00C4973D /* CancelFloatView.m */; };
+		223F2F92213D8B7000C4973D /* UIView+FloatFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7D213D8B6C00C4973D /* UIView+FloatFrame.m */; };
+		223F2F93213D8B7000C4973D /* NSObject+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7F213D8B6C00C4973D /* NSObject+ViewController.m */; };
+		223F2F94213D8B7000C4973D /* FloatBallManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F80213D8B6C00C4973D /* FloatBallManager.m */; };
+		223F2F96213D8B7000C4973D /* FloatBallResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 223F2F83213D8B6C00C4973D /* FloatBallResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		223F2F48213D8B0300C4973D /* WeChatFloatBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChatFloatBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		223F2F4B213D8B0300C4973D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		223F2F4C213D8B0300C4973D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		223F2F4E213D8B0300C4973D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		223F2F4F213D8B0300C4973D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		223F2F52213D8B0300C4973D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		223F2F54213D8B0600C4973D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		223F2F57213D8B0600C4973D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		223F2F59213D8B0600C4973D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		223F2F5A213D8B0600C4973D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		223F2F61213D8B6A00C4973D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		223F2F65213D8B6B00C4973D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		223F2F68213D8B6B00C4973D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		223F2F6A213D8B6B00C4973D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		223F2F6B213D8B6B00C4973D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		223F2F6C213D8B6B00C4973D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223F2F6D213D8B6B00C4973D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		223F2F6E213D8B6B00C4973D /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		223F2F6F213D8B6C00C4973D /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		223F2F71213D8B6C00C4973D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		223F2F72213D8B6C00C4973D /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		223F2F74213D8B6C00C4973D /* FloatTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatTransitionAnimator.m; sourceTree = "<group>"; };
+		223F2F75213D8B6C00C4973D /* UIView+FloatFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FloatFrame.h"; sourceTree = "<group>"; };
+		223F2F76213D8B6C00C4973D /* CancelFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelFloatView.h; sourceTree = "<group>"; };
+		223F2F77213D8B6C00C4973D /* FloatBallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatBallManager.h; sourceTree = "<group>"; };
+		223F2F78213D8B6C00C4973D /* NSObject+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ViewController.h"; sourceTree = "<group>"; };
+		223F2F7A213D8B6C00C4973D /* UINavigationController+FloatBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FloatBall.m"; sourceTree = "<group>"; };
+		223F2F7B213D8B6C00C4973D /* FloatBallDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatBallDefine.h; sourceTree = "<group>"; };
+		223F2F7C213D8B6C00C4973D /* CancelFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelFloatView.m; sourceTree = "<group>"; };
+		223F2F7D213D8B6C00C4973D /* UIView+FloatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FloatFrame.m"; sourceTree = "<group>"; };
+		223F2F7E213D8B6C00C4973D /* FloatTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatTransitionAnimator.h; sourceTree = "<group>"; };
+		223F2F7F213D8B6C00C4973D /* NSObject+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ViewController.m"; sourceTree = "<group>"; };
+		223F2F80213D8B6C00C4973D /* FloatBallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatBallManager.m; sourceTree = "<group>"; };
+		223F2F81213D8B6C00C4973D /* UINavigationController+FloatBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FloatBall.h"; sourceTree = "<group>"; };
+		223F2F83213D8B6C00C4973D /* FloatBallResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FloatBallResource.bundle; sourceTree = "<group>"; };
+		223F2F84213D8B6D00C4973D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +83,50 @@
 		223F2F4A213D8B0300C4973D /* WeChatFloatBall */ = {
 			isa = PBXGroup;
 			children = (
-				223F2F4B213D8B0300C4973D /* AppDelegate.h */,
-				223F2F4C213D8B0300C4973D /* AppDelegate.m */,
-				223F2F4E213D8B0300C4973D /* ViewController.h */,
-				223F2F4F213D8B0300C4973D /* ViewController.m */,
-				223F2F51213D8B0300C4973D /* Main.storyboard */,
-				223F2F54213D8B0600C4973D /* Assets.xcassets */,
-				223F2F56213D8B0600C4973D /* LaunchScreen.storyboard */,
-				223F2F59213D8B0600C4973D /* Info.plist */,
-				223F2F5A213D8B0600C4973D /* main.m */,
+				223F2F6D213D8B6B00C4973D /* AppDelegate.h */,
+				223F2F61213D8B6A00C4973D /* AppDelegate.m */,
+				223F2F6E213D8B6B00C4973D /* BaseNavigationController.h */,
+				223F2F6F213D8B6C00C4973D /* BaseNavigationController.m */,
+				223F2F84213D8B6D00C4973D /* SecondViewController.h */,
+				223F2F72213D8B6C00C4973D /* SecondViewController.m */,
+				223F2F71213D8B6C00C4973D /* ViewController.h */,
+				223F2F65213D8B6B00C4973D /* ViewController.m */,
+				223F2F73213D8B6C00C4973D /* FloatBallManager */,
+				223F2F67213D8B6B00C4973D /* Supporting Files */,
 			);
 			path = WeChatFloatBall;
+			sourceTree = "<group>";
+		};
+		223F2F67213D8B6B00C4973D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				223F2F68213D8B6B00C4973D /* Assets.xcassets */,
+				223F2F69213D8B6B00C4973D /* LaunchScreen.storyboard */,
+				223F2F6B213D8B6B00C4973D /* main.m */,
+				223F2F6C213D8B6B00C4973D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		223F2F73213D8B6C00C4973D /* FloatBallManager */ = {
+			isa = PBXGroup;
+			children = (
+				223F2F76213D8B6C00C4973D /* CancelFloatView.h */,
+				223F2F7C213D8B6C00C4973D /* CancelFloatView.m */,
+				223F2F7B213D8B6C00C4973D /* FloatBallDefine.h */,
+				223F2F77213D8B6C00C4973D /* FloatBallManager.h */,
+				223F2F80213D8B6C00C4973D /* FloatBallManager.m */,
+				223F2F7E213D8B6C00C4973D /* FloatTransitionAnimator.h */,
+				223F2F74213D8B6C00C4973D /* FloatTransitionAnimator.m */,
+				223F2F78213D8B6C00C4973D /* NSObject+ViewController.h */,
+				223F2F7F213D8B6C00C4973D /* NSObject+ViewController.m */,
+				223F2F81213D8B6C00C4973D /* UINavigationController+FloatBall.h */,
+				223F2F7A213D8B6C00C4973D /* UINavigationController+FloatBall.m */,
+				223F2F75213D8B6C00C4973D /* UIView+FloatFrame.h */,
+				223F2F7D213D8B6C00C4973D /* UIView+FloatFrame.m */,
+				223F2F83213D8B6C00C4973D /* FloatBallResource.bundle */,
+			);
+			path = FloatBallManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,9 +186,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223F2F58213D8B0600C4973D /* LaunchScreen.storyboard in Resources */,
-				223F2F55213D8B0600C4973D /* Assets.xcassets in Resources */,
-				223F2F53213D8B0300C4973D /* Main.storyboard in Resources */,
+				223F2F89213D8B7000C4973D /* Assets.xcassets in Resources */,
+				223F2F96213D8B7000C4973D /* FloatBallResource.bundle in Resources */,
+				223F2F8A213D8B7000C4973D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,27 +199,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				223F2F50213D8B0300C4973D /* ViewController.m in Sources */,
-				223F2F5B213D8B0600C4973D /* main.m in Sources */,
-				223F2F4D213D8B0300C4973D /* AppDelegate.m in Sources */,
+				223F2F93213D8B7000C4973D /* NSObject+ViewController.m in Sources */,
+				223F2F8E213D8B7000C4973D /* SecondViewController.m in Sources */,
+				223F2F88213D8B7000C4973D /* ViewController.m in Sources */,
+				223F2F86213D8B7000C4973D /* AppDelegate.m in Sources */,
+				223F2F8B213D8B7000C4973D /* main.m in Sources */,
+				223F2F94213D8B7000C4973D /* FloatBallManager.m in Sources */,
+				223F2F8D213D8B7000C4973D /* BaseNavigationController.m in Sources */,
+				223F2F8F213D8B7000C4973D /* FloatTransitionAnimator.m in Sources */,
+				223F2F90213D8B7000C4973D /* UINavigationController+FloatBall.m in Sources */,
+				223F2F91213D8B7000C4973D /* CancelFloatView.m in Sources */,
+				223F2F92213D8B7000C4973D /* UIView+FloatFrame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		223F2F51213D8B0300C4973D /* Main.storyboard */ = {
+		223F2F69213D8B6B00C4973D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				223F2F52213D8B0300C4973D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		223F2F56213D8B0600C4973D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				223F2F57213D8B0600C4973D /* Base */,
+				223F2F6A213D8B6B00C4973D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -220,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -272,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -285,7 +343,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCTFNMNKBD;
-				INFOPLIST_FILE = WeChatFloatBall/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeChatFloatBall/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QCTFNMNKBD;
-				INFOPLIST_FILE = WeChatFloatBall/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WeChatFloatBall/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

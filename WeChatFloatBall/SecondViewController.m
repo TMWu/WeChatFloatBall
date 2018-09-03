@@ -1,31 +1,30 @@
 //
-//  ViewController.m
+//  SecondViewController.m
 //  WebViewDemo
 //
-//  Created by TIM on 2018/8/29.
+//  Created by TIM on 2018/8/30.
 //  Copyright © 2018年 TIM. All rights reserved.
 //
 
+#import "SecondViewController.h"
 #import "ViewController.h"
 #import "UIView+FloatFrame.h"
-#import "SecondViewController.h"
-#import "FloatBallDefine.h"
 
-@interface ViewController ()
+@interface SecondViewController ()
 @property (nonatomic, strong) UIButton *pushButton;
 @end
 
-@implementation ViewController
+@implementation SecondViewController
 
 - (void)dealloc
 {
-    NSLog(@"ViewController -- dealloc");
+    NSLog(@"SecondViewController -- dealloc");
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.title = @"正常页面";
+    self.title = @"测试页面";
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.pushButton];
 }
@@ -39,8 +38,7 @@
 
 - (void)pushAction:(id)sender
 {
-    SecondViewController *vc = [SecondViewController new];
-    vc.view.backgroundColor = [UIColor colorWithRed:(arc4random() % 255) / 255.0 green:(arc4random() % 255) / 255.0 blue:(arc4random() % 255) / 255.0 alpha:1.0];
+    ViewController *vc = [ViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -50,7 +48,7 @@
 {
     if (!_pushButton) {
         _pushButton = [UIButton buttonWithType:UIButtonTypeSystem];
-        [_pushButton setTitle:@"跳转测试页面" forState:UIControlStateNormal];
+        [_pushButton setTitle:@"跳转正常页面" forState:UIControlStateNormal];
         [_pushButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [_pushButton addTarget:self action:@selector(pushAction:) forControlEvents:UIControlEventTouchUpInside];
     }
