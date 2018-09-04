@@ -22,6 +22,7 @@ typedef NS_ENUM(NSInteger, FloatShowStyle) {
 };
 
 @interface FloatBallManager ()<UINavigationControllerDelegate, UIGestureRecognizerDelegate>
+
 /** 需要监控的类名 */
 @property (nonatomic, strong) NSMutableArray<NSString *> *monitorVCClasses;
 /** 悬浮球显示模式 */
@@ -36,6 +37,7 @@ typedef NS_ENUM(NSInteger, FloatShowStyle) {
 @property (nonatomic, strong) UIImageView *floatView;
 /** 右下角1/4圆 */
 @property (nonatomic, strong) CancelFloatView *cancelFloatView;
+
 @end
 
 NSString *const kPopInteractiveKey = @"kPopInteractiveKey";

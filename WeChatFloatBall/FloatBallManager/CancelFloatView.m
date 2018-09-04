@@ -11,12 +11,17 @@
 #import "FloatBallDefine.h"
 
 @interface CancelFloatView ()
+
 @property (nonatomic, strong) UIImageView *imageView;
 @property (nonatomic, strong) UILabel *label;
+/** 模糊板 */
+@property (nonatomic, strong) UIToolbar *toolbar;
+
 /** 悬浮球是否拖动到圆内 */
 @property (nonatomic, assign) BOOL touchInRound;
 /** 是否正在显示，显示的时候背景为红包，否则为灰色 */
 @property (nonatomic, assign) BOOL showing;
+
 @end
 
 @implementation CancelFloatView
@@ -24,7 +29,7 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.95];
+        self.backgroundColor = [UIColor clearColor];
         [self setupView];
     }
     return self;
@@ -32,6 +37,9 @@
 
 - (void)setupView
 {
+    _toolbar = [UIToolbar new];
+    _toolbar.barStyle = UIBarStyleBlack;
+    [self addSubview:_toolbar];
     _imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"FloatBallResource.bundle/demo_cancel_float_default"]];
     _imageView.contentMode = UIViewContentModeCenter;
     [self addSubview:_imageView];
@@ -46,6 +54,7 @@
 - (void)layoutSubviews
 {
     [super layoutSubviews];
+    _toolbar.frame = self.bounds;
     _imageView.size = CGSizeMake(40, 40);
     _imageView.centerX = self.width / 2.0 + 26;
     _imageView.centerY = self.height / 2.0;
@@ -109,7 +118,8 @@
 {
     if (_showing != showing) {
         _showing = showing;
-        self.backgroundColor = showing ? [UIColor colorWithRed:0.9 green:0.3 blue:0.3 alpha:0.95] : [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.95];
+        self.backgroundColor = showing ? [UIColor colorWithRed:0.9 green:0.3 blue:0.3 alpha:1] : [UIColor clearColor];
+        _toolbar.hidden = showing;
         _imageView.image = [UIImage imageNamed:showing ? @"FloatBallResource.bundle/demo_cancel_float" : @"FloatBallResource.bundle/demo_cancel_float_default"];
         _label.text = showing ? @"取消浮窗" : @"浮窗";
     }
