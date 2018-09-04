@@ -1,10 +1,6 @@
 # WeChatFloatBall
 一行代码实现高仿微信悬浮球
 
-
-# WeChatFloatBall
-### 一行代码实现高仿微信悬浮球
-
 首先来看下微信上的效果： 
 
 ![微信](https://upload-images.jianshu.io/upload_images/5306625-6efbc87feeda1e69.GIF?imageMogr2/auto-orient/strip)  
