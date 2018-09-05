@@ -61,7 +61,8 @@ NSString *const kPopWithPanGes = @"kPopWithPanGes";
         [NSObject currentNavigationController].interactivePopGestureRecognizer.delegate = floatManager;
         [NSObject currentNavigationController].delegate = floatManager;
         [[NSNotificationCenter defaultCenter] addObserver:floatManager selector:@selector(p_animationWillBegin) name:AnimationWillBeginKey object:nil];
-        [[NSNotificationCenter defaultCenter] addObserver:floatManager selector:@selector(p_animationDidEnd) name:AnimationDidEndKey object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:floatManager selector:@selector(p_animationWillEnd) name:AnimationWillEndKey object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:floatManager selector:@selector(p_animationDidEnd:) name:AnimationDidEndKey object:nil];
     });
     return floatManager;
 }
@@ -126,7 +127,7 @@ NSString *const kPopWithPanGes = @"kPopWithPanGes";
 
 - (FloatTransitionAnimator *)createAnimatorWithOperation:(UINavigationControllerOperation)operation
 {
-    return (FloatTransitionAnimator *)[FloatTransitionAnimator animatorWithStartCenter:self.floatView.center radius:FloatWidth / 2.0 operation:operation];
+    return [FloatTransitionAnimator animatorWithStartCenter:self.floatView.center radius:FloatWidth / 2.0 operation:operation];
 }
 
 - (id <UIViewControllerInteractiveTransitioning>)floatInteractionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
@@ -211,7 +212,7 @@ NSString *const kPopWithPanGes = @"kPopWithPanGes";
             if (notShowFloatContent) {
                 //右滑手势，滑动至右下角1/4圆内则显示悬浮球
                 if ([self p_checkTouchPointInRound:point]) {
-                    [self p_animationDidEnd];
+                    [self p_animationWillEnd];
                     self.floatViewController = self.lastPopViewController;
                     //更新转场动画，从当前触摸点开始缩小到悬浮点位置
                     [animator replaceAnimation];
@@ -221,9 +222,9 @@ NSString *const kPopWithPanGes = @"kPopWithPanGes";
                 }
             }
             else { //正在显示悬浮球内容
-                self.showStyle = FloatShowStyleShow;
                 //右滑手势拖动超过一半，手指离开屏幕，也会从当前触摸位置缩小到悬浮球
                 [animator replaceAnimation];
+                [self p_animationWillEnd];
             }
             [interactive finishInteractiveTransition];
         }
@@ -321,9 +322,15 @@ NSString *const kPopWithPanGes = @"kPopWithPanGes";
     self.showStyle = FloatShowStyleShowContent;
 }
 
-- (void)p_animationDidEnd
+- (void)p_animationWillEnd
 {
     self.showStyle = FloatShowStyleShow;
+}
+
+- (void)p_animationDidEnd:(NSNotification *)notification
+{
+    UIViewController *fromVC = notification.object;
+    [self p_clearControllerAnimatorAndInteractive:fromVC];
 }
 
 #pragma mark - Private
@@ -399,7 +406,7 @@ NSString *const kPopWithPanGes = @"kPopWithPanGes";
 }
 
 #pragma mark - UINavigationControllerDelegate
-
+/** 转场动画 */
 - (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
                                    animationControllerForOperation:(UINavigationControllerOperation)operation
                                                 fromViewController:(UIViewController *)fromVC
@@ -408,6 +415,7 @@ NSString *const kPopWithPanGes = @"kPopWithPanGes";
     return [[FloatBallManager shared] floatBallAnimationWithOperation:operation fromViewController:fromVC toViewController:toVC];
 }
 
+/** 转场交互 */
 - (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                           interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
 {

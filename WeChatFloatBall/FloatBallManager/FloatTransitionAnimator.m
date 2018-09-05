@@ -205,16 +205,11 @@
 
 - (void)p_endAnimator
 {
-    if (_operation == UINavigationControllerOperationPush) {
-        [_coverView removeFromSuperview];
-    }
-    else {
+    [_coverView removeFromSuperview];
+    if (_operation == UINavigationControllerOperationPop) {
         //执行完之后清理绑定，防止循环引用
         UIViewController *fromVC = [self.transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-        FloatTransitionAnimator *animator = objc_getAssociatedObject(fromVC, &kAnimatorKey);
-        [animator.coverView removeFromSuperview];
-        objc_setAssociatedObject(fromVC, &kPopInteractiveKey, nil, OBJC_ASSOCIATION_ASSIGN);
-        objc_setAssociatedObject(fromVC, &kAnimatorKey, nil, OBJC_ASSOCIATION_ASSIGN);
+        [[NSNotificationCenter defaultCenter] postNotificationName:AnimationDidEndKey object:fromVC];
     }
     [self.transitionContext completeTransition:![self.transitionContext transitionWasCancelled]];
 }
@@ -225,7 +220,7 @@
 {
     //pop转场动画执行完，显示悬浮球
     if (_operation == UINavigationControllerOperationPop) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:AnimationDidEndKey object:nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:AnimationWillEndKey object:nil];
     }
     [self p_endAnimator];
 }

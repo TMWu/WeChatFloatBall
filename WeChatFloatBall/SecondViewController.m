@@ -18,7 +18,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"SecondViewController -- dealloc");
+    NSLog(@"SecondViewController（测试页面） -- dealloc");
 }
 
 - (void)viewDidLoad

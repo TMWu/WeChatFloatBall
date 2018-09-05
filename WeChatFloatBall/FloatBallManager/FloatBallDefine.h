@@ -31,6 +31,7 @@
 #define FloatTranslationOutDuration 0.2
 
 #define AnimationWillBeginKey   @"AnimationWillBeginKey"
+#define AnimationWillEndKey     @"AnimationWillEndKey"
 #define AnimationDidEndKey      @"AnimationDidEndKey"
 
 //定义了一个__weak的self_weak_变量

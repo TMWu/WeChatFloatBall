@@ -19,7 +19,7 @@
 
 - (void)dealloc
 {
-    NSLog(@"ViewController -- dealloc");
+    NSLog(@"ViewController（正常页面） -- dealloc");
 }
 
 - (void)viewDidLoad

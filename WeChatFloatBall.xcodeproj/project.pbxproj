@@ -15,7 +15,6 @@
 		223F2F8D213D8B7000C4973D /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F6F213D8B6C00C4973D /* BaseNavigationController.m */; };
 		223F2F8E213D8B7000C4973D /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F72213D8B6C00C4973D /* SecondViewController.m */; };
 		223F2F8F213D8B7000C4973D /* FloatTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F74213D8B6C00C4973D /* FloatTransitionAnimator.m */; };
-		223F2F90213D8B7000C4973D /* UINavigationController+FloatBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7A213D8B6C00C4973D /* UINavigationController+FloatBall.m */; };
 		223F2F91213D8B7000C4973D /* CancelFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7C213D8B6C00C4973D /* CancelFloatView.m */; };
 		223F2F92213D8B7000C4973D /* UIView+FloatFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7D213D8B6C00C4973D /* UIView+FloatFrame.m */; };
 		223F2F93213D8B7000C4973D /* NSObject+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 223F2F7F213D8B6C00C4973D /* NSObject+ViewController.m */; };
@@ -41,14 +40,12 @@
 		223F2F76213D8B6C00C4973D /* CancelFloatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CancelFloatView.h; sourceTree = "<group>"; };
 		223F2F77213D8B6C00C4973D /* FloatBallManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatBallManager.h; sourceTree = "<group>"; };
 		223F2F78213D8B6C00C4973D /* NSObject+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+ViewController.h"; sourceTree = "<group>"; };
-		223F2F7A213D8B6C00C4973D /* UINavigationController+FloatBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FloatBall.m"; sourceTree = "<group>"; };
 		223F2F7B213D8B6C00C4973D /* FloatBallDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatBallDefine.h; sourceTree = "<group>"; };
 		223F2F7C213D8B6C00C4973D /* CancelFloatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CancelFloatView.m; sourceTree = "<group>"; };
 		223F2F7D213D8B6C00C4973D /* UIView+FloatFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FloatFrame.m"; sourceTree = "<group>"; };
 		223F2F7E213D8B6C00C4973D /* FloatTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FloatTransitionAnimator.h; sourceTree = "<group>"; };
 		223F2F7F213D8B6C00C4973D /* NSObject+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ViewController.m"; sourceTree = "<group>"; };
 		223F2F80213D8B6C00C4973D /* FloatBallManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FloatBallManager.m; sourceTree = "<group>"; };
-		223F2F81213D8B6C00C4973D /* UINavigationController+FloatBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FloatBall.h"; sourceTree = "<group>"; };
 		223F2F83213D8B6C00C4973D /* FloatBallResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FloatBallResource.bundle; sourceTree = "<group>"; };
 		223F2F84213D8B6D00C4973D /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,15 +110,13 @@
 			children = (
 				223F2F76213D8B6C00C4973D /* CancelFloatView.h */,
 				223F2F7C213D8B6C00C4973D /* CancelFloatView.m */,
-				223F2F7B213D8B6C00C4973D /* FloatBallDefine.h */,
 				223F2F77213D8B6C00C4973D /* FloatBallManager.h */,
 				223F2F80213D8B6C00C4973D /* FloatBallManager.m */,
 				223F2F7E213D8B6C00C4973D /* FloatTransitionAnimator.h */,
 				223F2F74213D8B6C00C4973D /* FloatTransitionAnimator.m */,
+				223F2F7B213D8B6C00C4973D /* FloatBallDefine.h */,
 				223F2F78213D8B6C00C4973D /* NSObject+ViewController.h */,
 				223F2F7F213D8B6C00C4973D /* NSObject+ViewController.m */,
-				223F2F81213D8B6C00C4973D /* UINavigationController+FloatBall.h */,
-				223F2F7A213D8B6C00C4973D /* UINavigationController+FloatBall.m */,
 				223F2F75213D8B6C00C4973D /* UIView+FloatFrame.h */,
 				223F2F7D213D8B6C00C4973D /* UIView+FloatFrame.m */,
 				223F2F83213D8B6C00C4973D /* FloatBallResource.bundle */,
@@ -207,7 +202,6 @@
 				223F2F94213D8B7000C4973D /* FloatBallManager.m in Sources */,
 				223F2F8D213D8B7000C4973D /* BaseNavigationController.m in Sources */,
 				223F2F8F213D8B7000C4973D /* FloatTransitionAnimator.m in Sources */,
-				223F2F90213D8B7000C4973D /* UINavigationController+FloatBall.m in Sources */,
 				223F2F91213D8B7000C4973D /* CancelFloatView.m in Sources */,
 				223F2F92213D8B7000C4973D /* UIView+FloatFrame.m in Sources */,
 			);
