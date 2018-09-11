@@ -42,12 +42,14 @@
     return [[FloatBallManager shared] floatBallAnimationWithOperation:operation fromViewController:fromVC toViewController:toVC];
 }
 
+#pragma mark 交互式转场
 - (id <UIViewControllerInteractiveTransitioning>)navigationController:(UINavigationController *)navigationController
                           interactionControllerForAnimationController:(id <UIViewControllerAnimatedTransitioning>) animationController
 {
     return [[FloatBallManager shared] floatInteractionControllerForAnimationController:animationController];
 }
 
+#pragma mark 添加滑动手势
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
 {
     [[FloatBallManager shared] didShowViewController:viewController navigationController:navigationController];
